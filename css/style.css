@@ -85,7 +85,7 @@ body {
 #header_index {
     height: 1000px;
     /* background-color: antiquewhite; */
-    background-image: url(/img/background_index_hero_image.jpg);
+    background-image: url("/img/bg_img_index_hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 80px;
