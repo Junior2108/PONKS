@@ -1,0 +1,408 @@
+:root {
+    --header-height: 3.5em;
+
+
+    /* Colors */
+
+
+
+
+    /* Fonts */
+
+
+
+
+    
+}
+
+
+/* ===============================================================  BASE    ===================================================================== */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Athletics", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+    h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+    }
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-size: 50px;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+}
+
+body {
+    width: 100%;
+}
+
+/* ===============================================================   REUSABLE CSS CLASSES   ===================================================================== */
+
+
+
+/* ===============================================================  HEADER    ===================================================================== */
+
+
+
+/* Header start */
+
+.logo p img,
+.footer-logo img{
+    width: 150px;
+}
+
+#header,
+#header_index {
+    align-items: center;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+#header_index {
+    height: 1000px;
+    /* background-color: antiquewhite; */
+    background-image: url(/img/background_index_hero_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
+}
+
+
+#container {
+    width: 93%;
+    margin: 0 auto;
+}
+
+#menu_container{
+    margin-left: 50px;
+}
+
+
+
+
+
+/* ===============================================================   NAV   ===================================================================== */
+
+/* #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+#navbar li {
+    list-style: none;
+    margin: 0;
+    /* padding: 0 20px; */
+    /* position: relative; */
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* Navigation for mobile */
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 525px);
+    /* width: 90%; */
+    /* margin: 0 auto; */
+    justify-content: space-between;
+    /* gap: 70px; */
+    margin-top: 50px;    
+}
+
+.gallery_block{
+    width: 525px;
+    height: 525px;
+    background-color: red;
+    margin-bottom: 100px;
+}
+
+.gallery_block img{
+    width: 525px;
+}
+
+.gallery_block p {
+    text-align: center;
+    color: #fe0138;
+    font-weight: 400;
+    font-size: 1.7rem;
+    font-style: italic;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+
+
+
+/* ===============================================================   FOOTER   ===================================================================== */
+
+.footer {
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.footer-logo{
+margin: 0 200px;
+}
+
+.footer-info{
+    display: flex;
+}
+
+.footer-info p,
+.footer-info a{
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.footer-info a{
+    text-decoration: none;
+}
+
+.footer-info p+p::before {
+    content: "|";
+    padding: 1.2rem
+}
+
+/* ===============================================================   INDEX PAGE   ===================================================================== */
+
+
+#hero_film_title,
+#header_index_text_title{
+    display: flex;
+    width: 350px;
+    height: 50px;
+    background-color: #fea4ae;
+    justify-content: right;
+    align-items: center;
+}
+
+#header_index_text_title{
+    justify-content: left;
+    margin-top: 260px;
+    padding-left: 50px;
+}
+
+#hero_film_title p{
+    color: #fe0137;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 25px;
+}
+
+#header_index_text_description{
+    padding-left: 50px;
+}
+
+#header_index_text_description p{
+    color: #000;
+    margin-top: 40px;
+}
+
+
+
+/* ===============================================================   FILMS PAGE   ===================================================================== */
+
+#hero_film {
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, 450px); */
+    width: 100%;
+    height: 810px;
+    margin: 0 auto;
+    /* justify-content: center; */
+    /* gap: 70px; */
+    background-color: #fea4ae;
+    margin: 100px 0;  
+      
+}
+
+.hero_film_band {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+}
+
+#hero_film_frame {
+    margin: 65px 0 0 120px;
+}
+
+#hero_film_txt {
+    padding: 185px 0 0 75px;
+}
+
+#hero_film_txt p,
+#hero_film_txt h2{
+    color: #fe0137;
+}
+
+#hero_film_txt p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+#hero_film_txt h2{
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+#hero_film_txt h2:last-of-type{
+    margin-bottom: 25px;
+}
+
+ 
+/* ===============================================================   WORK PAGE   ===================================================================== */
+
+
+#hero_work {
+    width: 100%;
+    display: flex;
+    margin: 75px 0 200px 0;
+}
+#hero_work_image,
+#hero_work_image img {
+    width: 750px;
+    height: 750px;
+}
+
+#hero_work_image {
+    /* margin:  0 50px; */
+}
+
+#hero_work_text {
+    margin-top: 100px;
+}
+
+#hero_work_text h2 {
+    color: #fe0138;
+    font-weight: 400;
+    font-size: 1.7rem;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+#hero_work_text h3 {
+    color: #000;
+    font-weight: 300;
+    font-size: 1rem;
+    text-transform: uppercase;
+    line-height: 1.1rem;
+}
+
+#hero_work_text h3:last-of-type {
+    margin-bottom: 50px;
+}
+
+
+#hero_work_text p{
+    font-size: 0.9rem;
+    line-height: 1.1;
+    margin-bottom: 40px;
+}
+
+/* ===============================================================   PUBLIC ART PAGE   ===================================================================== */
+
+.hero_public_art {
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, 450px); */
+    width: 100%;
+    height: 810px;
+    margin: 0 auto;
+    /* justify-content: center; */
+    /* gap: 70px; */
+    background-color: transparent;
+    margin: 100px 0; 
+}
+
+#hero_public_art_txt{
+    padding: 60px 0 0 75px;
+
+}
+
+
+#hero_public_art_txt h2{
+    color: #fe0137;
+}
+
+#hero_public_art_txt p{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+#hero_public_art_txt h2{
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+
+/* ===============================================================   FLANEUR PAGE   ===================================================================== */
+
+
+#hero_work_gallery{
+    display: flex;
+}
+
+
+.thumbnail {
+    width: 100px;
+}
+
+.hero_work_thumb_image{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero_work_thumb_image img {
+    cursor: pointer;
+}
+
