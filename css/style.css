@@ -85,7 +85,7 @@ body {
 #header_index {
     height: 1000px;
     /* background-color: antiquewhite; */
-    background-image: url("/img/bg_img_index_hero.jpg");
+    background-image: url('img/bg_img_index_hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 80px;
@@ -189,11 +189,12 @@ body {
 }
 
 .footer-logo{
-margin: 0 200px;
+margin: 0 150px;
 }
 
 .footer-info{
     display: flex;
+    align-items: center;
 }
 
 .footer-info p,
