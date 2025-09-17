@@ -189,11 +189,12 @@ body {
 }
 
 .footer-logo{
-margin: 0 200px;
+margin: 0 150px;
 }
 
 .footer-info{
     display: flex;
+    align-items: center;
 }
 
 .footer-info p,
