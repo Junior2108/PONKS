@@ -84,8 +84,8 @@ body {
 
 #header_index {
     height: 1000px;
-    /* background-color: antiquewhite; */
-    background-image: url('img/bg_img_index_hero.jpg');
+    background-color: antiquewhite;
+    /*background-image: url('img/bg_img_index_hero.jpg');*/
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 80px;
@@ -310,8 +310,8 @@ margin: 0 150px;
 }
 #hero_work_image,
 #hero_work_image img {
-    width: 750px;
-    height: 750px;
+    width: 800px;
+    height: 800px;
 }
 
 #hero_work_image {
@@ -391,11 +391,14 @@ margin: 0 150px;
 
 #hero_work_gallery{
     display: flex;
+    margin-right: 50px;
+
 }
 
 
 .thumbnail {
     width: 100px;
+    height: 100px;
 }
 
 .hero_work_thumb_image{
