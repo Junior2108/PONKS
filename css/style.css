@@ -84,8 +84,8 @@ body {
 
 #header_index {
     height: 1000px;
-    background-color: antiquewhite;
-    /*background-image: url('img/bg_img_index_hero.jpg');*/
+    /* background-color: antiquewhite; */
+    background-image: url("/img/Ritual_home_page.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 80px;
@@ -93,7 +93,7 @@ body {
 
 
 #container {
-    width: 93%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -122,8 +122,8 @@ body {
 
 #navbar li a {
     text-decoration: none;
-    font-size: 0.8rem;
-    font-weight: normal;
+    font-size: 1.1rem;
+    font-weight: lighter;
     color: #1a1a1a;
     transition: 0.3s ease;
 }
@@ -153,7 +153,8 @@ body {
     /* margin: 0 auto; */
     justify-content: space-between;
     /* gap: 70px; */
-    margin-top: 50px;    
+    margin-top: 50px;
+    padding: 0 50px;    
 }
 
 .gallery_block{
@@ -243,6 +244,7 @@ margin: 0 150px;
 }
 
 #header_index_text_description p{
+    font-size: 1.1rem;
     color: #000;
     margin-top: 40px;
 }
@@ -314,9 +316,9 @@ margin: 0 150px;
     height: 800px;
 }
 
-#hero_work_image {
-    /* margin:  0 50px; */
-}
+/* #hero_work_image {
+     margin:  0 50px; 
+} */
 
 #hero_work_text {
     margin-top: 100px;
@@ -364,7 +366,7 @@ margin: 0 150px;
 }
 
 #hero_public_art_txt{
-    padding: 60px 0 0 75px;
+    padding: 60px 50px 0 50px;
 
 }
 
@@ -410,3 +412,29 @@ margin: 0 150px;
     cursor: pointer;
 }
 
+
+
+/*Desktops*/
+
+@media (max-width: 1440px){
+    body{
+        width: 1440px;
+    }
+}
+
+
+@media only screen and (max-width: 320px){
+body{
+    width: 1120px;
+}
+
+.gallery {
+    grid-template-columns: repeat(auto-fit, 500px);
+}
+
+.gallery_block,
+.gallery_block img {
+    width: 500px;
+    height: 500px;
+}
+}
